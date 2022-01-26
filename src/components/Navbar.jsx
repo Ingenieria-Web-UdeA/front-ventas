@@ -21,7 +21,7 @@ const Navbar = () => {
               <LinkNavegacion texto='Inicio' ruta='/' />
               <LinkNavegacion texto='Nueva Venta' ruta='/ventas/nueva' />
               <LinkNavegacion texto='Nuevo Cliente' ruta='/clientes/nuevo' />
-              <LinkNavegacion texto='Nuevo Producto' ruta='/productos/nuevo' />
+              <LinkNavegacion texto='Productos' ruta='/productos' />
             </ul>
           </nav>
         )}
@@ -38,7 +38,7 @@ const NavbarBig = () => (
       <LinkNavegacion texto='Inicio' ruta='/' />
       <LinkNavegacion texto='Nueva Venta' ruta='/ventas/nueva' />
       <LinkNavegacion texto='Nuevo Cliente' ruta='/clientes/nuevo' />
-      <LinkNavegacion texto='Nuevo Producto' ruta='/productos/nuevo' />
+      <LinkNavegacion texto='Productos' ruta='/productos' />
     </ul>
   </nav>
 );

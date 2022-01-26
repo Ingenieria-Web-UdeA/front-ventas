@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import CardProducto from 'components/CardProducto';
+import { Link } from 'react-router-dom';
 
 const IndexProductos = () => {
   const [productos, setProductos] = useState([]);
@@ -19,9 +20,11 @@ const IndexProductos = () => {
     obtenerProductos();
   }, []);
   return (
-    <div>
-      Productos
-      <div className='flex'>
+    <div className='flex flex-col p-10'>
+      <button className='button-submit self-end' type='button'>
+        <Link to='/productos/nuevo'>Crear Nuevo Producto</Link>
+      </button>
+      <div className='flex flex-wrap'>
         {productos.map((producto) => (
           <CardProducto
             nombre={producto.nombre}
